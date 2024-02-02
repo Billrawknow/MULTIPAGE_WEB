@@ -8,12 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -22,11 +25,50 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-    
+    <div class="text-box">
+        <h1> World's Biggest University</h1>
+        <p> At the core of all we do is a focus on our students’ 
+            needs as we prepare them for their careers. <br>Our educators 
+            are leading educators in our community who work side-by-side 
+            with our students in hands-on, <br>innovative and creative learning 
+            environments.</p>
+        <a href="" class="hero-btn"> Click here for more inforamation</a>
+    </div>
+
 
     </section>
 
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Eligibility: KCSE Grade C+, KACE with two principals, diplomas in relevant fields, or equivalent qualifications.</p>
+            </div>
+            <div class="course-col">
+                <h3>Undergraduate Programmes</h3>
+                <p>Bachelor degrees in Arts, Commerce, various Sciences, Economics, Environmental Science, and more.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post-Graduate</h3>
+                <p>Open for Bachelor's degree holders with Second Class Honours, Upper Division or equivalent.</p>
+            </div>
+        </div>
+    </section>
+    
+<script>
+    var navLinks = document.getElementById("nav-links");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
 
 </body>
 </html>
