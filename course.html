@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kipkulel University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="nav-links">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+        <h1> Our Courses</h1>
+
+    </section>
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <div class="row">
+          <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>
+              Eligibility: KCSE Grade C+, KACE with two principals, diplomas in
+              relevant fields, or equivalent qualifications.
+            </p>
+          </div>
+          <div class="course-col">
+            <h3>Undergraduate Programmes</h3>
+            <p>
+              Bachelor degrees in Arts, Commerce, various Sciences, Economics,
+              Environmental Science, and more.
+            </p>
+          </div>
+          <div class="course-col">
+            <h3>Post-Graduate</h3>
+            <p>
+              Open for Bachelor's degree holders with Second Class Honours, Upper
+              Division or equivalent.
+            </p>
+          </div>
+        </div>
+      </section>  <section class="facilities">
+        <h1> Our Facilities </h1>
+        <p>
+                KPLU boasts a comprehensive sports infrastructure catering to both recreational and competitive needs, well-maintained for use by students, staff, and the community. Key facilities include:Soccer Pitches,Swimming Pool,Volleyball Courts,Netball Pitches,Handball Pitches,Rugby Pitch,Hockey Fields,Basketball Courts,Athletics Tracks,and Tennis Courts
+            </p>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png" >
+                    <h3> World Class Library</h3>
+                    <p>
+                        The library's digital resources are cutting-edge, offering access to a wealth of online databases, e-books, and academic journals. Students and faculty can also take advantage of interlibrary loan services, expanding their research capabilities beyond the physical confines of the library.
+                    </p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/basketball.png" >
+                    <h3> Largest Playground</h3>
+                    <p>
+                        Our largest playground is a hub of activity and fun, featuring a wide array of sports facilities including basketball courts, soccer fields, and more. It's a perfect place for students to engage in physical activities, develop teamwork skills, and enjoy healthy outdoor play in a safe and well-maintained environment.
+                    </p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/cafeteria.png" >
+                    <h3> Testy and Healhty Foods</h3>
+                    <p>
+                        The cafeteria offers a variety of tasty and healthy food options to cater to all dietary preferences. With a focus on nutrition and freshness, our menu includes a range of choices from classic comfort foods to international cuisines, ensuring there's something delightful for everyone.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+       <!-- ---  Footer ---  -->
+       <section class="footer">
+        <h4> About Us</h4>
+        <p>Our university stands unparalleled in academic excellence, fostering innovative minds and shaping future leaders.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-tiktok"></i>
+            <p>Made with  <i class="far fa-heart"></i> by Rawknow</p>
+
+        </div>
+        
+        </section>
+
+    <script>
+        var navLinks = document.getElementById("nav-links");
+  
+        function showMenu() {
+          navLinks.style.right = "0";
+        }
+  
+        function hideMenu() {
+          navLinks.style.right = "-200px";
+        }
+      </script>
+    </body>
+  </html>
