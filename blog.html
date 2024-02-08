@@ -41,34 +41,81 @@
         <div class="blog-left">
           <img src="images/certificate.jpg" >
           <h2> Our Certificate & Online Programs for 2024</h2>
-          <p> In 2024, our university is proud to unveil an expansive range of Certificate and Online Programs, meticulously designed to meet the evolving demands of the modern workforce. Our programs are a blend of rigorous academic standards and real-world practicality, ensuring that each course is both intellectually stimulating and highly applicable to current industry trends. With a focus on innovative learning methodologies and cutting-edge technology, we aim to provide our students with a learning experience that is both flexible and comprehensive. Whether you are looking to advance in your current field or pivot to a new career, our programs offer the tools and knowledge necessary to succeed in today’s dynamic job market.</p>
+
+          <p> In 2024, our university is proud to unveil an expansive range of 
+              Certificate and Online Programs, meticulously designed to meet the 
+              evolving demands of the modern workforce. Our programs are a blend of 
+              rigorous academic standards and real-world practicality, ensuring that 
+              each course is both intellectually stimulating and highly applicable to 
+              current industry trends. With a focus on innovative learning methodologies
+              and cutting-edge technology, we aim to provide our students with a learning 
+              experience that is both flexible and comprehensive. Whether you are looking
+                to advance in your current field or pivot to a new career, our programs offer
+                the tools and knowledge necessary to succeed in today’s dynamic job market.
+              </p>
           <br>
-          <p>Our online programs, in particular, emphasize interactive and accessible learning, catering to students across the globe. These courses are tailored for both full-time professionals and those seeking to enhance their skills and knowledge in a specific area. With an emphasis on collaboration and networking, students have the opportunity to connect with peers and industry experts, enriching their learning experience. Our diverse range of certificate programs covers various disciplines, ensuring that there is something for everyone, from digital marketing and data analysis to healthcare management and creative design. By enrolling in our 2024 programs, students are not just earning a certificate; they are gaining an invaluable asset that will propel them forward in their professional endeavors.</p>
+          <p>Our online programs, in particular, emphasize interactive and accessible 
+            learning, catering to students across the globe. These courses are tailored 
+            for both full-time professionals and those seeking to enhance their skills and 
+            knowledge in a specific area. With an emphasis on collaboration and networking, 
+            students have the opportunity to connect with peers and industry experts,
+             enriching their learning experience. Our diverse range of certificate programs 
+             covers various disciplines, ensuring that there is something for everyone, 
+             from digital marketing and data analysis to healthcare management and creative 
+             design. By enrolling in our 2024 programs, students are not just earning a 
+             certificate; they are gaining an invaluable asset that will propel them forward
+              in their professional endeavors.
+            </p>
         <br>
           <p>
-            Beyond the conventional classroom boundaries, our 2024 Certificate and Online Programs are structured to foster an environment of continuous engagement and interactive learning. Each program is crafted with the intent of maximizing student participation and ensuring a hands-on approach to education. This is achieved through virtual labs, real-world case studies, and collaborative projects that bring theoretical concepts to life. Our esteemed faculty, comprised of industry leaders and academic pioneers, guide students through a curriculum that is both challenging and inspiring, equipping them with the skills to excel in an ever-changing professional landscape.
+            Beyond the conventional classroom boundaries, our 2024 Certificate and Online
+             Programs are structured to foster an environment of continuous engagement and 
+             interactive learning. Each program is crafted with the intent of maximizing 
+             student participation and ensuring a hands-on approach to education. This is 
+             achieved through virtual labs, real-world case studies, and collaborative 
+             projects that bring theoretical concepts to life. Our esteemed faculty, 
+             comprised of industry leaders and academic pioneers, guide students through
+              a curriculum that is both challenging and inspiring, equipping them with the 
+              skills to excel in an ever-changing professional landscape.
           </p>
           <br>
-          <p>Our commitment to excellence is further reflected in the comprehensive support services provided to online learners. Understanding the unique challenges faced by online students, we offer extensive resources including career counseling, technical support, and a dedicated online learning platform. This platform is not just a repository of course materials but a vibrant community space where students can interact with their peers and instructors in real time. It's a place where ideas are shared, questions are encouraged, and learning is a collaborative process.
+          <p>Our commitment to excellence is further reflected in the comprehensive support 
+            services provided to online learners. Understanding the unique challenges faced
+             by online students, we offer extensive resources including career counseling, 
+             technical support, and a dedicated online learning platform. This platform is
+              not just a repository of course materials but a vibrant community space where
+               students can interact with their peers and instructors in real time. It's a 
+               place where ideas are shared, questions are encouraged, and learning is a 
+               collaborative process.
 
           </p>
           <br>
           <p>
-            In 2024, we also place a strong emphasis on the integration of global perspectives into our curriculum. Recognizing the importance of international expertise in today's interconnected world, our programs offer modules that discuss global trends and issues. Students will have opportunities to participate in international projects and virtual exchange programs, enabling them to gain a broader understanding of their field from a global standpoint. This international exposure prepares our students to become not just experts in their chosen fields, but also informed global citizens capable of making significant contributions on a worldwide scale.
+            In 2024, we also place a strong emphasis on the integration of global perspectives
+             into our curriculum. Recognizing the importance of international expertise in 
+             today's interconnected world, our programs offer modules that discuss global 
+             trends and issues. Students will have opportunities to participate in 
+             international projects and virtual exchange programs, enabling them to 
+             gain a broader understanding of their field from a global standpoint. 
+             This international exposure prepares our students to become not just 
+             experts in their chosen fields, but also informed global citizens capable 
+             of making significant contributions on a worldwide scale.
           </p>
-          
+
           <div class="comment-box">
 
             <h3> Leave a Comment</h3>
 
             <form class="comment-form">
-              <input type="text" placeholder="Enter Name">
-              <input type="email" placeholder="Enter Email">
-              <textarea rows="5" placeholder="Your Comment">
-              </textarea>
-              <button type="submit" class="hero-btn red-btn" > POST COMMENT</button>
+              <input type="text" placeholder="Enter Your Name" pattern="[A-Za-z\s-']+" title="Only letters are allowed">
+              <input type="tel" placeholder="Enter Your Phone Number" pattern="\d*" title="Only numbers are allowed">
+              <input type="email" placeholder="Enter Your Email">
+              <textarea rows="6" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn"> POST COMMENT</button>
             </form>
+
           </div>
+
       </div>
         <div class="blog-right"> 
           <h3>Post Categories</h3>
@@ -132,5 +179,24 @@
         navLinks.style.right = "-200px";
       }
     </script>
+    <!--<script>
+    document.getElementById('commentForm').addEventListener('submit', function(event) {
+        var nameInput = this.querySelector('input[type="text"]');
+        var phoneInput = this.querySelector('input[type="tel"]');
+
+        // Check if name input contains only letters, spaces, hyphens, and apostrophes
+        if (!/^[A-Za-z\s-']+$/.test(nameInput.value)) {
+            alert('Name must contain only letters.');
+            event.preventDefault(); // Prevent form submission
+        }
+
+        // Check if phone input contains only numbers
+        if (!/^\d+$/.test(phoneInput.value)) {
+            alert('Phone number must contain only numbers.');
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+</script>
+-->
   </body>
 </html>
