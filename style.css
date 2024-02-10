@@ -474,3 +474,17 @@ h3 {
 .location iframe {
   width: 100%;
 }
+.contact-us{
+  width: 80%;
+margin: auto;
+}
+.contact-column{
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.contact-col div 
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
