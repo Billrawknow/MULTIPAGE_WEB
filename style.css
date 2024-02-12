@@ -78,6 +78,7 @@ nav img {
   background: transparent;
   position: relative;
   cursor: pointer;
+  border-radius: 5px;
 }
 @media (max-width: 700px) {
   .hero-btn {
@@ -90,6 +91,7 @@ nav img {
     background: transparent;
     position: relative;
     cursor: pointer;
+    border-radius: 5px;
   }
 }
 
@@ -482,6 +484,9 @@ h3 {
   flex-basis: 48%;
   margin-bottom: 30px;
 }
+.contact-col form {
+  margin-bottom: 60px;
+}
 .contact-col div {
   display: flex;
   align-items: center;
@@ -492,7 +497,7 @@ h3 {
   font-size: 28px;
   color: #f44336;
   margin: 10px;
-  margin-right: 30px;
+  margin-right: 50px;
 }
 .contact-col div p {
   padding: 0;
@@ -508,5 +513,13 @@ h3 {
   padding: 15px;
   margin-bottom: 17px;
   outline: none;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .contact-col {
+    margin-bottom: 30px; /* Less space on smaller screens */
+  }
+  /* Adjust other spacings as needed for responsiveness */
 }
