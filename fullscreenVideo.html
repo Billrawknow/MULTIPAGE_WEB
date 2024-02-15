@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Fullscreen Events</title>
+</head>
+<body>
+    <!-- Example video element -->
+    <video id="myVideo" controls width="720">
+        <source src="path/to/your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        // Ensure the DOM content is fully loaded before attaching event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            var videoElement = document.getElementById('myVideo');
+
+            // Listener for entering fullscreen
+            videoElement.addEventListener('webkitbeginfullscreen', function() {
+                console.log('Video is about to go fullscreen!');
+                // Additional code for handling fullscreen entry
+            });
+
+            // Listener for exiting fullscreen
+            videoElement.addEventListener('webkitendfullscreen', function() {
+                console.log('Video exited fullscreen mode.');
+                // Additional code for handling fullscreen exit
+            });
+        });
+    </script>
+</body>
+</html>
